@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		
+		<title>Magic Life Counter</title>
+		
+		<link rel="stylesheet" href="css/base.css">
+	</head>
+	<body>
+		<div id="index" class="pane">
+			<div id="touch1" class="touch">
+				<img id="img1" class="img"/>
+				<div id="joueur1" class="joueur">20</div>
+			</div>
+			
+			<div id="barreCentrale">
+				<table id="boutons">
+					<tr>
+						<td class="button" id="btnMenu">Menu</td>
+						<td class="button" id="btnReset">Reset</td>
+						<td class="button" id="btnQuit">Quitter</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="touch2" class="touch">
+				<img id="img2" class="img"/>
+				<div id="joueur2" class="joueur">20</div>
+			</div>
+		</div>
+		
+		<div id="menu" class="pane">
+			<div id="btnMenuRetour" class="btnRetour"><img src="img/retour.png"/></div>
+			<h1>Menu</h1>
+			<div class="button" id="btnEdh">30 PVs</div>
+			<div class="button" id="btnChangeFond">Changer les fonds</div>
+			<div class="button" id="btnCredits">Voir les crédits</div>
+		</div>
+		
+		<div id="credits" class="pane">
+			<div id="btnCreditsRetour" class="btnRetour"><img src="img/retour.png"/></div>
+			<h1>Crédits</h1>
+			<p>Développement : Josselin TILLAY-DOLEDEC</p>
+			<p>Images : Magic The Gathering</p>
+		</div>
+		
+		<script type="text/javascript" data-main="js/init.js" src="js/lib/require.js"></script>
+		
+		<script type="text/javascript" src="js/globales.js"></script>
+		<script type="text/javascript" src="js/style.js"></script>
+		<script type="text/javascript" src="js/mlc.js"></script>
+		
+	</body>
+</html>

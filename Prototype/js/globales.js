@@ -1,0 +1,10 @@
+﻿var pos, decal = window.innerWidth/5;
+var touchEnCours, multiplier;
+var touch1 = document.getElementById("touch1"), touch2 = document.getElementById("touch2");
+var barreCentrale = document.getElementById("barreCentrale");
+var fonds = ["ajani", "liliana", "jace", "garruk", "chandra"];
+var btnReset = document.getElementById("btnReset"), btnMenu = document.getElementById("btnMenu"), btnQuitter = document.getElementById("btnQuit");
+var menu = document.getElementById("menu"), index = document.getElementById("index");
+var btnMenuRetour = document.getElementById("btnMenuRetour"), btnCreditsRetour = document.getElementById("btnCreditsRetour");
+var btnChangeFond = document.getElementById("btnChangeFond"), btnEdh = document.getElementById("btnEdh"), btnCredits = document.getElementById("btnCredits");
+var pvBase = 20;
