@@ -51,11 +51,14 @@
 	});
 	resetButton.addEventListener("click", reset);
 	fondsButton.addEventListener("click", loadFond);
+	
 	joueur1.addEventListener("touchstart", startJ1, false);
 	joueur1.addEventListener("touchmove", moveJ1, false);
+	joueur1.addEventListener("touchend", endJ1, false);
 	
 	joueur2.addEventListener("touchstart", startJ2, false);
 	joueur2.addEventListener("touchmove", moveJ2, false);
+	joueur2.addEventListener("touchend", endJ2, false);
 	
 	joueur1.style.height = (window.innerHeight-50)/2 + "px";
 	joueur2.style.height = (window.innerHeight-50)/2 + "px";
@@ -175,7 +178,14 @@
 	
 	function endJ1(evt){
 		evt.preventDefault();
-		
+		j1c1.style.display = "none";
+		j1c2.style.display = "none";
+	}
+	
+	function endJ2(evt){
+		evt.preventDefault();
+		j2c1.style.display = "none";
+		j2c2.style.display = "none";
 	}
 	
 	function reset(){

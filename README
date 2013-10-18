@@ -5,6 +5,7 @@ A Faire :
 - Ombre sur les menus
 - API anti orientation et anti mise en veille
 - Popup de notification des changements (API ?)
+- Faire glisser numéros vers une position finale
 
 Correctif :
-- Cacher les numéros dépassant de la roue
+- Cacher les numéros dépassant de la roue : Problématique, juste hidden pas parfait. Fonctionnel si on fait glisser les numéros vers une position finale

@@ -191,3 +191,7 @@ x-iconbutton{
 	max-width:100%;
 	min-height:100%;
 }
+
+#panneau-central{
+	z-index : 10;
+}
