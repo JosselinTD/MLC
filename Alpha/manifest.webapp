@@ -4,8 +4,8 @@
 	"description":"L'application des fans de Magic The Gathering. Utile pour compter les points de vie.",
 	"launch_path": "/index.html",
 	"icons": {
-		"16": "/img/icon.jpg",
-		"48": "/img/icon.jpg",
-        "128": "/img/icon.jpg"
+		"16": "/img/icon.png",
+		"48": "/img/icon.png",
+        "128": "/img/icon.png"
 	}
 }

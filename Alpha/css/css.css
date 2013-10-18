@@ -1,4 +1,4 @@
-@font-face{
+﻿@font-face{
 	font-family:MozTT;
 	src: url(FiraSans-Regular.ttf);
 }
@@ -168,4 +168,21 @@ x-iconbutton{
 .wheel-number{
 	width:20%;
 	position:absolute;
+}
+
+.cache{
+	position:absolute;
+	height:50px;
+	width:30%;
+	top:0px;
+	background-color:black;
+	z-index:5;
+}
+
+#j1cache1{
+	left:0px;
+}
+
+#j1cache2{
+	right:0px;
 }
