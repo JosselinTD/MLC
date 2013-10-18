@@ -1,1 +1,10 @@
-MLC
+﻿MAGIC LIFE COUNTER
+
+A Faire :
+- Dégradé roue des PVs
+- Ombre sur les menus
+- API anti orientation et anti mise en veille
+- Popup de notification des changements (API ?)
+
+Correctif :
+- Cacher les numéros dépassant de la roue
