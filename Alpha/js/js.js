@@ -87,6 +87,7 @@
 		toMove = wn1;
 		for(var i = 0;i<toMove.length;i++){
 			toMove[i].style.display = "block";
+			toMove[i].style.transition = "none";
 		}
 		pos = evt.touches[0].pageX;
 	}
@@ -135,6 +136,7 @@
 		toMove = wn2;
 		for(var i = 0;i<toMove.length;i++){
 			toMove[i].style.display = "block";
+			toMove[i].style.transition = "none";
 		}
 		pos = evt.touches[0].pageX;
 	}
@@ -181,12 +183,26 @@
 	
 	function endJ1(evt){
 		evt.preventDefault();
+		
+		var decal = -20 - parseFloat(j1c1.style.left);
+		for(var i = 0;i<wn1.length;i++){
+			wn1[i].style.transition = "left 100ms linear"
+			wn1[i].style.left = parseFloat(wn1[i].style.left) + decal + "%";
+		}
+		
 		j1c1.style.display = "none";
 		j1c2.style.display = "none";
 	}
 	
 	function endJ2(evt){
 		evt.preventDefault();
+		
+		var decal = -20 - parseFloat(j2c1.style.left);
+		for(var i = 0;i<wn2.length;i++){
+			wn2[i].style.transition = "left 100ms linear"
+			wn2[i].style.left = parseFloat(wn2[i].style.left) + decal + "%";
+		}
+		
 		j2c1.style.display = "none";
 		j2c2.style.display = "none";
 	}
