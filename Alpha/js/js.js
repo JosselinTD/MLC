@@ -49,6 +49,9 @@
 		
 		reset();
 	});
+	
+	lockedAllowed = window.screen.mozLockOrientation("portrait-primary");
+	
 	resetButton.addEventListener("click", reset);
 	fondsButton.addEventListener("click", loadFond);
 	

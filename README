@@ -1,11 +1,14 @@
 ﻿MAGIC LIFE COUNTER
 
 A Faire :
-- Dégradé roue des PVs
-- Ombre sur les menus
-- API anti orientation et anti mise en veille
 - Popup de notification des changements (API ?)
 - Faire glisser numéros vers une position finale
 
 Correctif :
 - Cacher les numéros dépassant de la roue : Problématique, juste hidden pas parfait. Fonctionnel si on fait glisser les numéros vers une position finale
+
+Plus tard :
+- anti mise en veille : API non disponible (Resource Lock API)
+
+Abandonné :
+- Ombre sur les menus : moche

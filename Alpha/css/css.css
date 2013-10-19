@@ -27,6 +27,7 @@ x-iconbutton{
 	top:50%;
 	margin-top:-25px;
 	height:50px;
+	z-index:5;
 }
 
 .button1{
@@ -173,18 +174,29 @@ x-iconbutton{
 .cache{
 	position:absolute;
 	height:50px;
-	width:30%;
+	width:45%;
 	top:0px;
-	background-color:black;
 	z-index:5;
 }
 
 #j1cache1{
 	left:0px;
+	background:linear-gradient(to right, black, rgba(0,0,0,0));
 }
 
 #j1cache2{
 	right:0px;
+	background:linear-gradient(to left, black, rgba(0,0,0,0));
+}
+
+#j2cache1{
+	left:0px;
+	background:linear-gradient(to right, black, rgba(0,0,0,0));
+}
+
+#j2cache2{
+	right:0px;
+	background:linear-gradient(to left, black, rgba(0,0,0,0));
 }
 
 .img{
