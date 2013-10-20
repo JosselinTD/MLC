@@ -14,6 +14,7 @@
 	var basePV = 20;
 	var pvsButton = document.getElementById("pvs");
 	var resetButton = document.getElementById("button11");
+	var infoBulle = document.getElementById("infoBulle");
 	
 	var j1c1 = document.getElementById("j1nb0"),
 		j1e1 = document.getElementById("j1nb0"), 
@@ -42,18 +43,23 @@
 		if(basePV == 20){
 			basePV = 30;
 			document.getElementById("changePv").innerHTML = 20;
+			
 		} else {
 			basePV = 20;
 			document.getElementById("changePv").innerHTML = 30;
 		}
 		
 		reset();
+		info(navigator.mozL10n.get("info-pv-change", { pv:basePV }));
 	});
 	
 	lockedAllowed = window.screen.mozLockOrientation("portrait-primary");
 	
 	resetButton.addEventListener("click", reset);
-	fondsButton.addEventListener("click", loadFond);
+	fondsButton.addEventListener("click", function(){
+		loadFond();
+		info(navigator.mozL10n.get("info-bg-change"));
+	});
 	
 	joueur1.addEventListener("touchstart", startJ1, false);
 	joueur1.addEventListener("touchmove", moveJ1, false);
@@ -80,6 +86,13 @@
 	}
 	
 	reset();
+	
+	function info(texte){
+		infoBulle.innerHTML = "<table><tr><td>"+texte+"</td></tr></table>";
+		infoBulle.style.top = "80%";
+		infoBulle.style.opacity = "0.9";
+		setTimeout("infoBulle.style.top = '100%'; infoBulle.style.opacity = '0.1';", 3000);
+	}
 	
 	var pos;
 	function startJ1(evt){
@@ -212,6 +225,7 @@
 			for(var j = 0; j<7; j++){
 				document.getElementById("j"+i+"nb"+j).style.left = (20*j)-20+"%";
 				document.getElementById("j"+i+"nb"+j).innerHTML = basePV - 3 + j;
+				document.getElementById("j"+i+"nb"+j).style.display = "block";
 			}
 			document.getElementById("j"+i+"nb0").style.display = "none";
 			document.getElementById("j"+i+"nb6").style.display = "none";

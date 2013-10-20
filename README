@@ -1,11 +1,5 @@
 ﻿MAGIC LIFE COUNTER
 
-A Faire :
-- Popup de notification des changements (API ?)
-
-Correctif :
-- Des chiffres disparaissent au reset dans certaines conditions (les extremes qui ne le sont plus je pense)
-
 Plus tard :
 - anti mise en veille : API non disponible (Resource Lock API)
 
