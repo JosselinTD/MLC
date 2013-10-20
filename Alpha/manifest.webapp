@@ -1,11 +1,16 @@
 ﻿{
 	"version":"0.1",
 	"name":"Magic Life Counter",
-	"description":"L'application des fans de Magic The Gathering. Utile pour compter les points de vie.",
+	"description":"The application fon fans of Magic The Gathering. Useful to count your Life Points.",
 	"launch_path": "/index.html",
 	"icons": {
-		"16": "/img/icon.png",
-		"48": "/img/icon.png",
-        "128": "/img/icon.png"
-	}
+		"60": "/img/icon.png",
+		"128": "/img/icon128.png"
+	},
+	"developer": {
+		"name": "Josselin TILLAY-DOLEDEC",
+		"url": "https://github.com/JosselinTD/MLC"
+	},
+	"orientation": "portrait-primary",
+	"default_locale":"en"
 }
